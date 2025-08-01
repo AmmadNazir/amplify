@@ -34,7 +34,7 @@
 
 <!-- Script to Fetch API -->
 <script>
-  fetch('https://wfb9c0wu2c.execute-api.us-east-1.amazonaws.com/default/dobFunction')
+  fetch('https://weancyaq39.execute-api.us-east-1.amazonaws.com/default/demoFuncation')
     .then(res => res.json())
     .then(data => {
       document.getElementById('api-response').textContent = data.message || JSON.stringify(data);
@@ -44,6 +44,19 @@
       console.error('Fetch error:', error);
     });
 </script>
+
+<!-- https://wfb9c0wu2c.execute-api.us-east-1.amazonaws.com/default/dobFunction -->
+<!-- <script>
+fetch('https://weancyaq39.execute-api.us-east-1.amazonaws.com/default/demoFuncation')
+  .then(res => res.json())
+  .then(data => {
+    console.log("Response from Lambda:", data);
+    document.body.innerHTML += `<p>${data.message}</p>`;
+  })
+  .catch(err => {
+    console.error("CORS or Fetch error:", err);
+  });
+</script> -->
 
 </body>
 </html>
